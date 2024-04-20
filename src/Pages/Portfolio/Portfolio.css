@@ -1,0 +1,16 @@
+.portfolio__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__section-title,
+.portfolio__section-subtitle {
+  padding: 0 0 10px 0;
+}
+
+.portfolio__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}

@@ -1,0 +1,71 @@
+.formation__section {
+  display: flex;
+  padding: 30px;
+  align-items: center;
+}
+
+.formation {
+  display: flex;
+  justify-content: center;
+}
+
+.educ__formation {
+  padding: 30px 0;
+  font-size: 4rem;
+}
+
+.formation__educ {
+  margin-right: 100px;
+  text-align: end;
+}
+
+.educ__formation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.formation__title {
+  padding: 30px 0;
+  font-size: 4rem;
+
+}
+
+.formation__subtitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--second-color);
+}
+
+.formation__name {
+  color: var(--first-color);
+}
+
+.formation__date {
+  color: var(--first-color);
+  font: 400 80% Tahoma;
+}
+
+.formation p,
+.formation ol {
+  font: 400 95%;
+  color: var(--second-color);
+  text-align: justify;width: 95%;
+}
+
+.formation article {
+  position: relative;
+  width: 38%;
+  overflow: hidden;
+}
+
+.formation__info {
+  width: 70%;
+}
+
+
+
+
+@media (max-width: 768px) {}

@@ -1,0 +1,26 @@
+.infinite-scroll{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.scroll-top{
+  margin-bottom: 30px;
+}
+
+.marquee__item-box {
+  margin: 10px;
+  max-width: fit-content;
+}
+
+.marquee__item {
+  padding: 2rem;
+  background-color: var(--first-color);
+  color: var(--black);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem -0.25rem var(--first-alpha-color);
+}
+
+.marquee__item-img{
+  width: 5rem;
+}
