@@ -2,17 +2,41 @@ import MotionHoc from "../../Components/MotionHoc/MotionHoc";
 import "./Portfolio.css";
 import PortfolioCard from "../../Components/PortfolioCard/PortfolioCard";
 import { Work } from "../../Data/WorkData";
+import { motion } from "framer-motion";
+import Title from "../../Components/TitleSec/TitleSec";
 
-const portfolioComponent = () => {
+const PortfolioComponent = () => {
   return (
-    <div className="portfolio__section page">
+    <motion.div
+      className="portfolio__section page"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+    >
       <div className="portfolio__info">
-        <h1 className="portfolio__section-title section-title">Portfolio</h1>
-        <h2 className="portfolio__section-subtitle section-subtitle">
+        <motion.h1
+          className="portfolio__section-title section-title"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Title text="Portfolio" />
+        </motion.h1>
+        <motion.h2
+          className="portfolio__section-subtitle section-subtitle"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
           ¡Mi galería de trofeos digitales!
-        </h2>
+        </motion.h2>
       </div>
-      <div className="portfolio__grid">
+      <motion.div
+        className="portfolio__grid"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         {Work.map((project) => (
           <PortfolioCard
             key={project.id}
@@ -24,11 +48,11 @@ const portfolioComponent = () => {
             code={project.github}
           />
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
-const Portfolio = MotionHoc(portfolioComponent);
+const Portfolio = MotionHoc(PortfolioComponent);
 
 export default Portfolio;

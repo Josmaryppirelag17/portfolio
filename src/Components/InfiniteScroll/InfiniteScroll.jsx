@@ -10,10 +10,16 @@ import notion from "../../assets/notion.svg";
 import trello from "../../assets/trello.svg";
 import git from "../../assets/git.svg";
 import github from "../../assets/github.svg";
+import { motion } from "framer-motion";
 
 const InfiniteScroll = () => {
   return (
-    <div className="infinite-scroll">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, delay: 1 }}
+      className="infinite-scroll"
+    >
       <div className="scroll-top">
         {" "}
         <Marquee
@@ -91,7 +97,7 @@ const InfiniteScroll = () => {
           </div>
         </Marquee>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

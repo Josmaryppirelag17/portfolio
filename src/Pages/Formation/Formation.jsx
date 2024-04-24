@@ -1,32 +1,120 @@
 import MotionHoc from "../../Components/MotionHoc/MotionHoc";
+import Title from "../../Components/TitleSec/TitleSec";
 import "./Formation.css";
+import { motion } from "framer-motion";
 
-const formationComponent = () => {
-
+const FormationComponent = () => {
   return (
-    <section className="formation__section page">
+    <motion.section
+      className="formation__section page"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="formation">
         <article className="formation__educ">
-          <h2 className="educ__formation section-title">Educacion</h2>
-          <figure className="educ__formation-item">
-            <figcaption className="formation__subtitle">Cursos</figcaption>
-            <h4 className="formation__name">Oracle Next Education</h4>
-            <h5>Oracle/Alura Latam</h5>
-            <h6 className="formation__date">2024 - Ahora</h6>
-          </figure>
-          <figure className="educ__formation-item">
-            <figcaption className="formation__subtitle">Formal</figcaption>
-            <h4 className="formation__name">Ingeniería de Sistemas</h4>
-            <h5 className="formation__info">
+          <motion.h2
+            className="educ__formation section-title"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
+            <Title text="Educación" />
+          </motion.h2>
+          <motion.figure
+            className="educ__formation-item"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <motion.figcaption
+              className="formation__subtitle"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              Cursos
+            </motion.figcaption>
+            <motion.h4
+              className="formation__name"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              Oracle Next Education
+            </motion.h4>
+            <motion.h5
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              Oracle/Alura Latam
+            </motion.h5>
+            <motion.h6
+              className="formation__date"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+            >
+              2024 - Ahora
+            </motion.h6>
+          </motion.figure>
+
+          <motion.figure
+            className="educ__formation-item"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            <motion.figcaption
+              className="formation__subtitle"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+            >
+              Formal
+            </motion.figcaption>
+            <motion.h4
+              className="formation__name"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              Ingeniería de Sistemas
+            </motion.h4>
+            <motion.h5
+              className="formation__info"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
               Instituto Universitario Politécnico “Santiago Mariño”
-            </h5>
-            <h6 className="formation__date">2023 - Actualmente</h6>
-          </figure>
+            </motion.h5>
+            <motion.h6
+              className="formation__date"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1.2 }}
+            >
+              2023 - Actualmente
+            </motion.h6>
+          </motion.figure>
         </article>
 
         <article>
-          <h2 className="formation__title section-title">Experiencia</h2>
-          <figure>
+          <motion.h2
+            className="formation__title section-title"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+          >
+            <Title text="Experiencia" />
+          </motion.h2>
+          <motion.figure
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+          >
             <p>
               Aunque cuento con experiencia laboral previa, colaboré de manera
               efectiva con mis colegas, demostrando habilidades en organización,
@@ -35,13 +123,13 @@ const formationComponent = () => {
               competencias valiosas que estoy seguro/a de que serán de gran
               utilidad en futuras oportunidades.
             </p>
-          </figure>
+          </motion.figure>
         </article>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
-const Formation = MotionHoc(formationComponent);
+const Formation = MotionHoc(FormationComponent);
 
 export default Formation;
