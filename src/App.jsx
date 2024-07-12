@@ -23,7 +23,6 @@ function App() {
             <Route path="/aboutme" element={<Aboutme />} />
             <Route path="/formation" element={<Formation />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            {/*            <Route path="/blog" element={<Blog />} />*/}
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>

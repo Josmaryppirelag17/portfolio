@@ -60,15 +60,17 @@
 @media screen and (max-width: 468px) {
   .sidebar {
     bottom: 0;
+    height: 45px;
+    width: 0vh;
     display: flex;
+    z-index: 99;
   }
 
   .sidebar__container {
-    width: 1vh;
-    height: 10vh;
     margin-top: 0;
     background-color: transparent;
     display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
   }
@@ -79,7 +81,8 @@
 
   .sidebar__text {
     margin-top: 0;
-    width: 0;
+    height: 0;
+    width: 100vw;
   }
 
   /* Estilo para todos los elementos .sidebar__icon */
