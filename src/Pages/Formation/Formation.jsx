@@ -28,7 +28,7 @@ const FormationComponent = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
           >
             <motion.figcaption
-              className="formation__subtitle"
+              className="formation__subtitle text-transform"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}

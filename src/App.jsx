@@ -7,7 +7,6 @@ import Contact from "./Pages/Contact/Contact";
 import Home from "./Pages/Home/Home";
 import Portfolio from "./Pages/Portfolio/Portfolio";
 import Sidebar from "./Components/Navbar/Sidebar";
-import SocialMedia from "./Components/SocialMedia/SocialMedia";
 
 function App() {
   const location = useLocation();
@@ -15,7 +14,6 @@ function App() {
   return (
     <>
       <Sidebar />
-      <SocialMedia />
       <div className="pages">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>

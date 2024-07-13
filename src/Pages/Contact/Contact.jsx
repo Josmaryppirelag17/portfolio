@@ -150,19 +150,6 @@ const ContactComponent = () => {
               className="list-item"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1.9 }}
-            >
-              <FontAwesomeIcon className="contact__svg" icon={faWhatsapp} />
-              <span className="contact-text phone">
-                <a href="tel:58-424-605-2566" title="Espero tu whatsapp">
-                  (424) 605-2566
-                </a>
-              </span>
-            </motion.li>
-            <motion.li
-              className="list-item"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 2.1 }}
             >
               <FontAwesomeIcon className="contact__svg" icon={faEnvelope} />
@@ -171,7 +158,7 @@ const ContactComponent = () => {
                   href="mailto:josmarypireladev@gmail.com"
                   title="Espero tu mensaje"
                 >
-                  josmarypireladev@gmail.com
+                  josmarypirela.dev@gmail.com
                 </a>
               </span>
             </motion.li>
@@ -248,7 +235,7 @@ const ContactComponent = () => {
                   className="social__media-link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://linktr.ee/josmarypg"
+                  href="https://linktr.ee/josmarypireladev"
                 >
                   {" "}
                   <img
@@ -261,14 +248,6 @@ const ContactComponent = () => {
             </ul>
           </ul>
           <hr />
-          <motion.div
-            className="copyright"
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 3.1 }}
-          >
-            &copy; Josmary Pirela | 2024
-          </motion.div>
         </motion.div>
       </div>
     </motion.section>

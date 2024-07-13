@@ -34,8 +34,7 @@ html {
 /* Configuramos la tipografía para toda la web */
 body {
   background-color: var(--fourth-color);
-  font-family: var(--tipo-principal);
-  background: var(--fourth-color);
+  font-family: var(--principal-font);
   color: var(--first-color);
 }
 
@@ -51,12 +50,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .section-title {
   color: var(--first-color);
-    font-size: 70px;
+  font-size: 70px;
 }
 
 /* Evitamos problemas con los SVG */
@@ -88,7 +86,6 @@ label {
   color: inherit;
   display: block;
 }
-
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1 {
@@ -155,4 +152,51 @@ figure {
   max-width: 100%;
   width: 100%;
   display: block;
+}
+
+/* Media Query para pantallas de 769px a 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-title {
+    font-size: 50px;
+    /* Reducido del 70px a 50px */
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    /* Reducido del 2.5rem a 2.25rem */
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    /* Reducido del 2rem a 1.75rem */
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    /* Reducido del 1.75rem a 1.5rem */
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    /* Reducido del 1.5rem a 1.25rem */
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    /* Reducido del 1.25rem a 1.1rem */
+  }
+
+  h6,
+  p,
+  span,
+  a,
+  strong,
+  blockquote,
+  i,
+  b,
+  u,
+  em {
+    font-size: 0.9em;
+    /* Reducido del 1em a 0.9em */
+  }
 }

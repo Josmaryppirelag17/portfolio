@@ -60,9 +60,9 @@ const HomeComponent = () => {
               transition={{ duration: 1, delay: 1 }}
               className="copy__email"
             >
-              <p>josmarypireladev@gmail.com</p>
+              <p>josmarypirela.dev@gmail.com</p>
 
-              <CopyToClipboard text="josmarypireladev@gmail.com">
+              <CopyToClipboard text="josmarypirela.dev@gmail.com">
                 <div
                   onClick={() =>
                     swal({
