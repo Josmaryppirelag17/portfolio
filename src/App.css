@@ -7,11 +7,11 @@
   --second-alpha-color: #97979780;
   --third-color: #727272;
   --third-alpha-color: #72727280;
-  --fourth-color: #fff;
+  --fourth-color: #000;
   --fourth-alpha-color: #ffffff80;
   --fifth-color: #26272b;
   --link: #48dad2;
-  --text: #080808;
+  --text: #fff;
 
   /* Tipografía */
   --principal-font: "Roboto", sans-serif;
